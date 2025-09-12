@@ -1,11 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Sparkles, TrendingUp, BarChart3 } from "lucide-react";
+import { Hero3D } from "./Hero3D";
 
 export const Hero = () => {
   return (
-    <section className="py-20 px-4">
-      <div className="container mx-auto text-center">
+    <section className="relative py-20 px-4 overflow-hidden">
+      <Hero3D />
+      <div className="container mx-auto text-center relative z-10">
         <Badge className="mb-6 bg-primary/10 text-primary border-primary/20 hover:bg-primary/20 transition-smooth">
           <Sparkles className="w-4 h-4 mr-2" />
           Sign In To Get 10 Credits For Free

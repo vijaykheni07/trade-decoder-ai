@@ -44,6 +44,8 @@ export const Hero = () => {
                 alt="AI Robot" 
                 className="w-full max-w-md h-auto object-contain relative z-10"
               />
+              {/* Bottom gradient overlay to blend with background */}
+              <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent z-20 pointer-events-none" />
             </div>
           </div>
           

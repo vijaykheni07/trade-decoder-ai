@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Sparkles, TrendingUp, BarChart3, Camera, Search, Settings } from "lucide-react";
-import { Hero3D } from "./Hero3D";
+import robotImage from "@/assets/robot-hero.png";
 
 export const Hero = () => {
   return (
@@ -31,10 +31,14 @@ export const Hero = () => {
             </Button>
           </div>
 
-          {/* Right Content - 3D Robot */}
-          <div className="relative">
-            <div className="relative h-[600px] w-full">
-              <Hero3D />
+          {/* Right Content - AI Robot Image */}
+          <div className="relative flex justify-center">
+            <div className="relative">
+              <img 
+                src={robotImage} 
+                alt="AI Robot" 
+                className="w-full max-w-md h-auto object-contain"
+              />
             </div>
           </div>
           

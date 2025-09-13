@@ -34,10 +34,15 @@ export const Hero = () => {
           {/* Right Content - AI Robot Image */}
           <div className="relative flex justify-center">
             <div className="relative">
+              {/* Circular Shadow */}
+              <div 
+                className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 rounded-full blur-3xl opacity-30 -z-10"
+                style={{ backgroundColor: '#794de8' }}
+              />
               <img 
                 src={robotImage} 
                 alt="AI Robot" 
-                className="w-full max-w-md h-auto object-contain"
+                className="w-full max-w-md h-auto object-contain relative z-10"
               />
             </div>
           </div>

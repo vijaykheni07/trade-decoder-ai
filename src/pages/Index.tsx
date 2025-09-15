@@ -5,6 +5,7 @@ import { SymbolSelector } from "@/components/SymbolSelector";
 import { TimeframeSelector } from "@/components/TimeframeSelector";
 import { AnalysisPanel } from "@/components/AnalysisPanel";
 import { HowItWorks } from "@/components/HowItWorks";
+import { News } from "@/components/News";
 
 const Index = () => {
   return (
@@ -29,6 +30,8 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <HowItWorks />
         </div>
+        
+        <News />
       </main>
       
       {/* Footer */}

@@ -27,11 +27,11 @@ export const Header = () => {
         </nav>
 
         <div className="flex items-center space-x-3">
-          <Button variant="ghost" size="sm">
-            Sign In
+          <Button variant="ghost" size="sm" asChild>
+            <a href="/signin">Sign In</a>
           </Button>
-          <Button variant="gradient" size="sm" className="hidden sm:inline-flex">
-            Get 10 Credits Free
+          <Button variant="gradient" size="sm" className="hidden sm:inline-flex" asChild>
+            <a href="/signup">Get Started Free</a>
           </Button>
         </div>
       </div>
